@@ -8,7 +8,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>gird</title>
+    <style>
+        .bd-example-row .row>.col, .bd-example-row .row>[class^=col-] {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            background-color: rgba(86,61,124,.15);
+            border: 1px solid rgba(86,61,124,.2);
+        }
+    </style>
 </head>
 <body>
 
@@ -19,6 +27,65 @@
 <div class="container-fluid" style="background-color: #957bbe">
     ...
 </div>
+
+<br>
+
+<div class="bd-example-row">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                one of three columns
+            </div>
+            <div class="col-sm">
+                one of three columns
+            </div>
+            <div class="col-sm">
+                one of three columns
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg">
+                one of three columns
+            </div>
+            <div class="col-lg">
+                one of three columns
+            </div>
+            <div class="col-lg">
+                one of three columns
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <h4>自动布局列</h4>
+        <h5>- 等宽</h5>
+        <div class="row">
+            <div class="col">
+                1 of 2
+            </div>
+            <div class="col">
+                2 of 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col">
+                2 of 3
+            </div>
+            <div class="col">
+                3 of 3
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
